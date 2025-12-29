@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ChevronDown } from "lucide-react";
 import { useState } from "react";
+import { Link } from "wouter";
 
 /**
  * Design Philosophy: Playful Adventure Theme
@@ -50,10 +51,14 @@ export default function Home() {
                 Learn how to salvage electronic parts, build amazing tools, and unlock the secrets of how technology works. This is your mission, should you choose to accept it! 🎯
               </p>
               <div className="flex gap-4 pt-4">
-                <button className="adventure-button">Start the Quest</button>
-                <button className="px-6 py-3 rounded-full font-semibold border-2 border-green-500 text-green-600 hover:bg-green-50 transition-all">
-                  Learn More
-                </button>
+                <Link href="/phase1">
+                  <a className="adventure-button">Start the Quest</a>
+                </Link>
+                <Link href="/parts-gallery">
+                  <a className="px-6 py-3 rounded-full font-semibold border-2 border-green-500 text-green-600 hover:bg-green-50 transition-all">
+                    Parts Gallery
+                  </a>
+                </Link>
               </div>
             </div>
 
@@ -224,6 +229,9 @@ export default function Home() {
                     If you can't find one of those chips, you can use an <strong>Arduino</strong> board instead! It can act as a translator between the camera chip and your computer.
                   </p>
                 </div>
+                <Link href="/phase1">
+                  <a className="adventure-button inline-block">Learn Phase 1 →</a>
+                </Link>
               </div>
             )}
           </div>
@@ -258,6 +266,9 @@ export default function Home() {
                     We'll use an Arduino with a special program called an <strong>I²C Scanner</strong>. It tries every possible "phone number" until it finds the camera chip and tells us its address!
                   </p>
                 </div>
+                <Link href="/phase2">
+                  <a className="adventure-button inline-block">Learn Phase 2 →</a>
+                </Link>
               </div>
             )}
           </div>
@@ -302,6 +313,9 @@ export default function Home() {
                     <li>• Add the <strong>AMS1117-3.3</strong> chip to make it safe</li>
                   </ul>
                 </div>
+                <Link href="/phase3">
+                  <a className="adventure-button inline-block">Learn Phase 3 →</a>
+                </Link>
               </div>
             )}
           </div>
@@ -336,6 +350,9 @@ export default function Home() {
                     We can use a salvaged microcontroller (like an ESP32 from an old smart bulb) to send commands to the camera chip. We'll program it using the free <strong>Arduino IDE</strong> and start building amazing things!
                   </p>
                 </div>
+                <Link href="/phase4">
+                  <a className="adventure-button inline-block">Learn Phase 4 →</a>
+                </Link>
               </div>
             )}
           </div>
@@ -409,9 +426,11 @@ export default function Home() {
           <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
             Start your treasure hunt today and unlock the secrets of electronics! Remember, every expert started as a curious explorer.
           </p>
-          <button className="adventure-button text-lg px-8 py-4">
-            Begin Your Quest Now! 🚀
-          </button>
+          <Link href="/phase1">
+            <a className="adventure-button text-lg px-8 py-4">
+              Begin Your Quest Now! 🚀
+            </a>
+          </Link>
         </div>
       </section>
 
@@ -428,9 +447,9 @@ export default function Home() {
             <div>
               <h4 className="text-white font-bold mb-4">Quick Links</h4>
               <ul className="space-y-2 text-sm">
-                <li><a href="#" className="hover:text-white transition">Start Quest</a></li>
-                <li><a href="#" className="hover:text-white transition">Learn More</a></li>
-                <li><a href="#" className="hover:text-white transition">Safety Tips</a></li>
+                <li><Link href="/phase1"><a className="hover:text-white transition">Start Quest</a></Link></li>
+                <li><Link href="/parts-gallery"><a className="hover:text-white transition">Parts Gallery</a></Link></li>
+                <li><Link href="/"><a className="hover:text-white transition">Home</a></Link></li>
               </ul>
             </div>
             <div>
