@@ -10,6 +10,8 @@ import Phase2Lesson from "./pages/Phase2Lesson";
 import Phase3Lesson from "./pages/Phase3Lesson";
 import Phase4Lesson from "./pages/Phase4Lesson";
 import PartsGallery from "./pages/PartsGallery";
+import InteractiveMasterclass from "./pages/InteractiveMasterclass";
+import GettingStarted from "./pages/GettingStarted";
 
 
 function Router() {
@@ -21,6 +23,8 @@ function Router() {
       <Route path={"/phase3"} component={Phase3Lesson} />
       <Route path={"/phase4"} component={Phase4Lesson} />
       <Route path={"/parts-gallery"} component={PartsGallery} />
+      <Route path={"\\interactive-masterclass"} component={InteractiveMasterclass} />
+      <Route path="/getting-started" component={GettingStarted} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />

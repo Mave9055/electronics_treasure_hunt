@@ -50,13 +50,13 @@ export default function Home() {
               <p className="text-lg text-gray-600 leading-relaxed">
                 Learn how to salvage electronic parts, build amazing tools, and unlock the secrets of how technology works. This is your mission, should you choose to accept it! 🎯
               </p>
-              <div className="flex gap-4 pt-4">
-                <Link href="/phase1">
-                  <a className="adventure-button">Start the Quest</a>
+              <div className="flex flex-col sm:flex-row gap-4 pt-4">
+                <Link href="/getting-started">
+                  <a className="adventure-button">🎓 Getting Started</a>
                 </Link>
-                <Link href="/parts-gallery">
+                <Link href="/interactive-masterclass">
                   <a className="px-6 py-3 rounded-full font-semibold border-2 border-green-500 text-green-600 hover:bg-green-50 transition-all">
-                    Parts Gallery
+                    Interactive Tools →
                   </a>
                 </Link>
               </div>
