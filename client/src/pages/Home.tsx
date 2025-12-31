@@ -41,14 +41,14 @@ export default function Home() {
             <div className="space-y-6">
               <div className="space-y-2">
                 <h2 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
-                  🗺️ Welcome to Your <span className="text-orange-600">Electronics Adventure!</span>
+                  Master <span className="text-orange-600">Electronics</span> at Your Own Pace
                 </h2>
                 <p className="text-xl text-gray-700">
-                  Become a tech explorer and discover hidden treasures in your old gadgets!
+                  Learn practical skills by building real projects, not theory from textbooks.
                 </p>
               </div>
               <p className="text-lg text-gray-600 leading-relaxed">
-                Learn how to salvage electronic parts, build amazing tools, and unlock the secrets of how technology works. This is your mission, should you choose to accept it! 🎯
+                Whether you're curious about how technology works, want to build IoT devices, or just enjoy hands-on learning, this masterclass breaks down electronics into simple, understandable concepts. No prior experience needed.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 pt-4">
                 <Link href="/getting-started">
@@ -64,11 +64,7 @@ export default function Home() {
 
             {/* Hero Image */}
             <div className="flex justify-center">
-              <img
-                src="/images/hero-treasure.png"
-                alt="Treasure chest with electronics and friendly robot explorer"
-                className="w-full max-w-md drop-shadow-2xl"
-              />
+              <img src="/images/hJBSzOquQM0j.jpg" alt="Professional electronics workshop with adults" className="rounded-2xl shadow-2xl max-w-2xl w-full object-cover h-96" />
             </div>
           </div>
         </div>
@@ -78,9 +74,9 @@ export default function Home() {
       <section className="py-12 bg-white/50 backdrop-blur-sm">
         <div className="container">
           <div className="bg-gradient-to-r from-blue-50 to-purple-50 rounded-3xl p-8 md:p-12 border-2 border-blue-200">
-            <h3 className="text-2xl font-bold text-blue-900 mb-4">🎯 Your Mission</h3>
+            <h3 className="text-2xl font-bold text-blue-900 mb-4">🎯 What You'll Learn</h3>
             <p className="text-lg text-blue-800 leading-relaxed">
-              Instead of buying expensive electronics kits, we're going to become <strong>salvage experts</strong>! We'll hunt through old laptops, phones, speakers, and other gadgets to find the parts we need. Then, we'll learn how to read the secret messages that chips send to each other, and eventually, we'll learn how to send them our own commands. It's like being a spy in the electronics world!
+              This masterclass teaches you the fundamentals of electronics through hands-on projects. You'll understand how circuits work, learn to read datasheets, program microcontrollers, and build real devices like security cameras, WiFi sensors, and smart controllers. By the end, you'll have the skills to troubleshoot problems, design circuits, and bring your ideas to life.
             </p>
           </div>
         </div>

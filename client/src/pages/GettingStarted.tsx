@@ -25,14 +25,21 @@ export default function GettingStarted() {
 
       {/* Main Content */}
       <div className="container py-12">
-        {/* Hero */}
-        <div className="mb-16 text-center">
-          <h2 className="text-5xl font-bold text-white mb-4">
-            Welcome to the <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-orange-500">Electronics Adventure</span>
-          </h2>
-          <p className="text-xl text-slate-300 max-w-3xl mx-auto">
-            You're about to discover that electronics isn't magic—it's just organized electricity. And yes, you can absolutely learn this.
-          </p>
+        {/* Hero Section */}
+        <div className="mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div>
+              <h2 className="text-5xl font-bold text-white mb-4">
+                Master <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-orange-500">Electronics</span> the Right Way
+              </h2>
+              <p className="text-xl text-slate-300">
+                No fluff. No gatekeeping. Just practical knowledge that works.
+              </p>
+            </div>
+            <div>
+              <img src="/images/OZXtr3tHiLRC.jpg" alt="Professional electronics training" className="rounded-2xl shadow-2xl w-full object-cover h-80" />
+            </div>
+          </div>
         </div>
 
         {/* The Truth About Electronics */}

@@ -31,14 +31,20 @@ export default function InteractiveMasterclass() {
       {/* Main Content */}
       <div className="container py-12">
         {/* Hero Section */}
-        <div className="mb-16 text-center">
-          <h2 className="text-5xl font-bold text-white mb-4">
-            🎓 Learn Electronics the <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-orange-500">Interactive Way</span>
-          </h2>
-          <p className="text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed">
-            No boring textbooks. No confusing jargon. Just hands-on, interactive tools that make electronics intuitive and fun.
-            Play with circuits, identify components, and track your progress as you become an electronics expert.
-          </p>
+        <div className="mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div>
+              <h2 className="text-5xl font-bold text-white mb-4">
+                Learn Electronics the <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-orange-500">Interactive Way</span>
+              </h2>
+              <p className="text-xl text-slate-300 leading-relaxed">
+                Hands-on tools and real projects. No boring theory. Just practical skills you can use immediately.
+              </p>
+            </div>
+            <div>
+              <img src="/images/DC1uqVTTJUj6.jpg" alt="Professional electronics hands-on learning" className="rounded-2xl shadow-2xl w-full object-cover h-80" />
+            </div>
+          </div>
         </div>
 
         {/* Section 1: Circuit Simulator */}
