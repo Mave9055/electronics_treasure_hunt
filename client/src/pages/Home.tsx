@@ -56,7 +56,24 @@ export default function Home() {
                 </Link>
                 <Link href="/interactive-masterclass">
                   <a className="px-6 py-3 rounded-full font-semibold border-2 border-green-500 text-green-600 hover:bg-green-50 transition-all">
-                    Interactive Tools →
+                    Interactive Tools
+                  </a>
+                </Link>
+              </div>
+              <div className="flex flex-col sm:flex-row gap-3 pt-6 flex-wrap">
+                <Link href="/fundamentals">
+                  <a className="text-sm px-4 py-2 bg-blue-100 text-blue-700 rounded-lg hover:bg-blue-200 transition-all">
+                    Fundamentals
+                  </a>
+                </Link>
+                <Link href="/resources">
+                  <a className="text-sm px-4 py-2 bg-purple-100 text-purple-700 rounded-lg hover:bg-purple-200 transition-all">
+                    Resources
+                  </a>
+                </Link>
+                <Link href="/community">
+                  <a className="text-sm px-4 py-2 bg-pink-100 text-pink-700 rounded-lg hover:bg-pink-200 transition-all">
+                    Community
                   </a>
                 </Link>
               </div>

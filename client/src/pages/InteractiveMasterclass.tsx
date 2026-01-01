@@ -1,10 +1,14 @@
-import { ChevronLeft } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { ChevronDown, ChevronLeft } from "lucide-react";
+import { useState } from "react";
 import { Link } from "wouter";
 import CircuitSimulator from "@/components/CircuitSimulator";
 import ChipIdentifier from "@/components/ChipIdentifier";
 import AchievementSystem from "@/components/AchievementSystem";
 import InteractiveQuiz from "@/components/InteractiveQuiz";
 import ProjectShowcase from "@/components/ProjectShowcase";
+import MultimeterSimulator from "@/components/MultimeterSimulator";
+import BreadboardDesigner from "@/components/BreadboardDesigner";
 
 /**
  * Interactive Masterclass Page
@@ -91,7 +95,17 @@ export default function InteractiveMasterclass() {
           <InteractiveQuiz />
         </section>
 
-        {/* Section 5: Project Showcase */}
+        {/* Section 5: Multimeter Simulator */}
+        <section className="mb-16">
+          <MultimeterSimulator />
+        </section>
+
+        {/* Section 6: Breadboard Designer */}
+        <section className="mb-16">
+          <BreadboardDesigner />
+        </section>
+
+        {/* Section 7: Project Showcase */}
         <section className="mb-16">
           <div className="mb-8">
             <h3 className="text-3xl font-bold text-white mb-2">🚀 Section 5: Real Projects</h3>
