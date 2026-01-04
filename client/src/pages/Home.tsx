@@ -76,6 +76,11 @@ export default function Home() {
                     Community
                   </a>
                 </Link>
+                <Link href="/troubleshooting">
+                  <a className="text-sm px-4 py-2 bg-red-100 text-red-700 rounded-lg hover:bg-red-200 transition-all">
+                    Troubleshooting
+                  </a>
+                </Link>
               </div>
             </div>
 

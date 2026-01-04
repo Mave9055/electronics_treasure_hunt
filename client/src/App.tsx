@@ -15,6 +15,7 @@ import Phase2Lesson from "./pages/Phase2Lesson";
 import Phase3Lesson from "./pages/Phase3Lesson";
 import Phase4Lesson from "./pages/Phase4Lesson";
 import PartsGallery from "./pages/PartsGallery";
+import Troubleshooting from "./pages/Troubleshooting";
 
 function Router() {
   return (
@@ -30,6 +31,7 @@ function Router() {
       <Route path={"/phase3"} component={Phase3Lesson} />
       <Route path={"/phase4"} component={Phase4Lesson} />
       <Route path={"/parts-gallery"} component={PartsGallery} />
+      <Route path={"/troubleshooting"} component={Troubleshooting} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />
