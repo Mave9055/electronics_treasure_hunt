@@ -86,6 +86,21 @@ export default function Home() {
                     Compatibility
                   </a>
                 </Link>
+                <Link href="/tools-calculators">
+                  <a className="text-sm px-4 py-2 bg-yellow-100 text-yellow-700 rounded-lg hover:bg-yellow-200 transition-all">
+                    Tools
+                  </a>
+                </Link>
+                <Link href="/error-codes">
+                  <a className="text-sm px-4 py-2 bg-orange-100 text-orange-700 rounded-lg hover:bg-orange-200 transition-all">
+                    Error Codes
+                  </a>
+                </Link>
+                <Link href="/safety-projects">
+                  <a className="text-sm px-4 py-2 bg-red-100 text-red-700 rounded-lg hover:bg-red-200 transition-all">
+                    Safety & Projects
+                  </a>
+                </Link>
               </div>
             </div>
 

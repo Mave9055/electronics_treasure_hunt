@@ -17,6 +17,9 @@ import Phase4Lesson from "./pages/Phase4Lesson";
 import PartsGallery from "./pages/PartsGallery";
 import Troubleshooting from "./pages/Troubleshooting";
 import CompatibilityCheckerPage from "./pages/CompatibilityCheckerPage";
+import ToolsCalculators from "./pages/ToolsCalculators";
+import ErrorCodeReference from "./pages/ErrorCodeReference";
+import SafetyAndProjects from "./pages/SafetyAndProjects";
 
 function Router() {
   return (
@@ -34,6 +37,9 @@ function Router() {
       <Route path={"/parts-gallery"} component={PartsGallery} />
       <Route path={"/troubleshooting"} component={Troubleshooting} />
       <Route path={"/compatibility-checker"} component={CompatibilityCheckerPage} />
+      <Route path={"/tools-calculators"} component={ToolsCalculators} />
+      <Route path={"/error-codes"} component={ErrorCodeReference} />
+      <Route path={"/safety-projects"} component={SafetyAndProjects} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />
