@@ -52,54 +52,54 @@ export default function Home() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 pt-4">
                 <Link href="/getting-started">
-                  <a className="adventure-button">🎓 Getting Started</a>
+                  <button className="adventure-button">🎓 Getting Started</button>
                 </Link>
                 <Link href="/interactive-masterclass">
-                  <a className="px-6 py-3 rounded-full font-semibold border-2 border-green-500 text-green-600 hover:bg-green-50 transition-all">
+                  <button className="px-6 py-3 rounded-full font-semibold border-2 border-green-500 text-green-600 hover:bg-green-50 transition-all bg-transparent cursor-pointer">
                     Interactive Tools
-                  </a>
+                  </button>
                 </Link>
               </div>
               <div className="flex flex-col sm:flex-row gap-3 pt-6 flex-wrap">
                 <Link href="/fundamentals">
-                  <a className="text-sm px-4 py-2 bg-blue-100 text-blue-700 rounded-lg hover:bg-blue-200 transition-all">
+                  <button className="text-sm px-4 py-2 bg-blue-100 text-blue-700 rounded-lg hover:bg-blue-200 transition-all border-0 cursor-pointer">
                     Fundamentals
-                  </a>
+                  </button>
                 </Link>
                 <Link href="/resources">
-                  <a className="text-sm px-4 py-2 bg-purple-100 text-purple-700 rounded-lg hover:bg-purple-200 transition-all">
+                  <button className="text-sm px-4 py-2 bg-purple-100 text-purple-700 rounded-lg hover:bg-purple-200 transition-all border-0 cursor-pointer">
                     Resources
-                  </a>
+                  </button>
                 </Link>
                 <Link href="/community">
-                  <a className="text-sm px-4 py-2 bg-pink-100 text-pink-700 rounded-lg hover:bg-pink-200 transition-all">
+                  <button className="text-sm px-4 py-2 bg-pink-100 text-pink-700 rounded-lg hover:bg-pink-200 transition-all border-0 cursor-pointer">
                     Community
-                  </a>
+                  </button>
                 </Link>
                 <Link href="/troubleshooting">
-                  <a className="text-sm px-4 py-2 bg-red-100 text-red-700 rounded-lg hover:bg-red-200 transition-all">
+                  <button className="text-sm px-4 py-2 bg-red-100 text-red-700 rounded-lg hover:bg-red-200 transition-all border-0 cursor-pointer">
                     Troubleshooting
-                  </a>
+                  </button>
                 </Link>
                 <Link href="/compatibility-checker">
-                  <a className="text-sm px-4 py-2 bg-green-100 text-green-700 rounded-lg hover:bg-green-200 transition-all">
+                  <button className="text-sm px-4 py-2 bg-green-100 text-green-700 rounded-lg hover:bg-green-200 transition-all border-0 cursor-pointer">
                     Compatibility
-                  </a>
+                  </button>
                 </Link>
                 <Link href="/tools-calculators">
-                  <a className="text-sm px-4 py-2 bg-yellow-100 text-yellow-700 rounded-lg hover:bg-yellow-200 transition-all">
+                  <button className="text-sm px-4 py-2 bg-yellow-100 text-yellow-700 rounded-lg hover:bg-yellow-200 transition-all border-0 cursor-pointer">
                     Tools
-                  </a>
+                  </button>
                 </Link>
                 <Link href="/error-codes">
-                  <a className="text-sm px-4 py-2 bg-orange-100 text-orange-700 rounded-lg hover:bg-orange-200 transition-all">
+                  <button className="text-sm px-4 py-2 bg-orange-100 text-orange-700 rounded-lg hover:bg-orange-200 transition-all border-0 cursor-pointer">
                     Error Codes
-                  </a>
+                  </button>
                 </Link>
                 <Link href="/safety-projects">
-                  <a className="text-sm px-4 py-2 bg-red-100 text-red-700 rounded-lg hover:bg-red-200 transition-all">
+                  <button className="text-sm px-4 py-2 bg-red-100 text-red-700 rounded-lg hover:bg-red-200 transition-all border-0 cursor-pointer">
                     Safety & Projects
-                  </a>
+                  </button>
                 </Link>
               </div>
             </div>
@@ -268,7 +268,7 @@ export default function Home() {
                   </p>
                 </div>
                 <Link href="/phase1">
-                  <a className="adventure-button inline-block">Learn Phase 1 →</a>
+                  <button className="adventure-button inline-block">Learn Phase 1 →</button>
                 </Link>
               </div>
             )}
@@ -305,7 +305,7 @@ export default function Home() {
                   </p>
                 </div>
                 <Link href="/phase2">
-                  <a className="adventure-button inline-block">Learn Phase 2 →</a>
+                  <button className="adventure-button inline-block">Learn Phase 2 →</button>
                 </Link>
               </div>
             )}
@@ -352,7 +352,7 @@ export default function Home() {
                   </ul>
                 </div>
                 <Link href="/phase3">
-                  <a className="adventure-button inline-block">Learn Phase 3 →</a>
+                  <button className="adventure-button inline-block">Learn Phase 3 →</button>
                 </Link>
               </div>
             )}
@@ -389,7 +389,7 @@ export default function Home() {
                   </p>
                 </div>
                 <Link href="/phase4">
-                  <a className="adventure-button inline-block">Learn Phase 4 →</a>
+                  <button className="adventure-button inline-block">Learn Phase 4 →</button>
                 </Link>
               </div>
             )}
@@ -465,9 +465,9 @@ export default function Home() {
             Start your treasure hunt today and unlock the secrets of electronics! Remember, every expert started as a curious explorer.
           </p>
           <Link href="/phase1">
-            <a className="adventure-button text-lg px-8 py-4">
+            <button className="adventure-button text-lg px-8 py-4">
               Begin Your Quest Now! 🚀
-            </a>
+            </button>
           </Link>
         </div>
       </section>
@@ -485,9 +485,9 @@ export default function Home() {
             <div>
               <h4 className="text-white font-bold mb-4">Quick Links</h4>
               <ul className="space-y-2 text-sm">
-                <li><Link href="/phase1"><a className="hover:text-white transition">Start Quest</a></Link></li>
-                <li><Link href="/parts-gallery"><a className="hover:text-white transition">Parts Gallery</a></Link></li>
-                <li><Link href="/"><a className="hover:text-white transition">Home</a></Link></li>
+                <li><Link href="/phase1"><span className="hover:text-white transition cursor-pointer">Start Quest</span></Link></li>
+                <li><Link href="/parts-gallery"><span className="hover:text-white transition cursor-pointer">Parts Gallery</span></Link></li>
+                <li><Link href="/"><span className="hover:text-white transition cursor-pointer">Home</span></Link></li>
               </ul>
             </div>
             <div>
