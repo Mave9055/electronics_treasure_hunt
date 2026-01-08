@@ -21,6 +21,7 @@ import ToolsCalculators from "./pages/ToolsCalculators";
 import ErrorCodeReference from "./pages/ErrorCodeReference";
 import SafetyAndProjects from "./pages/SafetyAndProjects";
 import GamificationPage from "./pages/GamificationPage";
+import UserProfile from "./pages/UserProfile";
 
 function Router() {
   return (
@@ -42,6 +43,7 @@ function Router() {
       <Route path={"/error-codes"} component={ErrorCodeReference} />
       <Route path={"/safety-projects"} component={SafetyAndProjects} />
       <Route path={"/gamification"} component={GamificationPage} />
+      <Route path={"/profile"} component={UserProfile} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />

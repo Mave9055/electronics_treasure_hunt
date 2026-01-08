@@ -106,6 +106,11 @@ export default function Home() {
                     Gamification
                   </button>
                 </Link>
+                <Link href="/profile">
+                  <button className="text-sm px-4 py-2 bg-rose-100 text-rose-700 rounded-lg hover:bg-rose-200 transition-all border-0 cursor-pointer">
+                    My Profile
+                  </button>
+                </Link>
               </div>
             </div>
 
