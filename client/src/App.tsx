@@ -12,6 +12,7 @@ import Community from "./pages/Community";
 import GettingStarted from "./pages/GettingStarted";
 import InteractiveMasterclass from "./pages/InteractiveMasterclass";
 import Phase1Lesson from "./pages/Phase1Lesson";
+import Phase1Enhanced from "./pages/Phase1Enhanced";
 import Phase2Lesson from "./pages/Phase2Lesson";
 import Phase3Lesson from "./pages/Phase3Lesson";
 import Phase4Lesson from "./pages/Phase4Lesson";
@@ -33,7 +34,8 @@ function Router() {
       <Route path={"/community"} component={Community} />
       <Route path={"/getting-started"} component={GettingStarted} />
       <Route path={"/interactive-masterclass"} component={InteractiveMasterclass} />
-      <Route path={"/phase1"} component={Phase1Lesson} />
+      <Route path={"/phase1"} component={Phase1Enhanced} />
+      <Route path={"/phase1-old"} component={Phase1Lesson} />
       <Route path={"/phase2"} component={Phase2Lesson} />
       <Route path={"/phase3"} component={Phase3Lesson} />
       <Route path={"/phase4"} component={Phase4Lesson} />
