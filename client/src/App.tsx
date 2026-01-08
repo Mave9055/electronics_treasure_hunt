@@ -17,6 +17,7 @@ import PhoneMicrophoneSalvage from "./pages/PhoneMicrophoneSalvage";
 import MicrophonePreamp from "./pages/MicrophonePreamp";
 import GuitarMicSetup from "./pages/GuitarMicSetup";
 import VocalMicSetup from "./pages/VocalMicSetup";
+import RecordingTemplates from "./pages/RecordingTemplates";
 import Phase2Lesson from "./pages/Phase2Lesson";
 import Phase3Lesson from "./pages/Phase3Lesson";
 import Phase4Lesson from "./pages/Phase4Lesson";
@@ -44,6 +45,7 @@ function Router() {
       <Route path={"/mic-preamp"} component={MicrophonePreamp} />
       <Route path={"/guitar-mic-setup"} component={GuitarMicSetup} />
       <Route path={"/vocal-mic-setup"} component={VocalMicSetup} />
+      <Route path={"/recording-templates"} component={RecordingTemplates} />
       <Route path={"/phase2"} component={Phase2Lesson} />
       <Route path={"/phase3"} component={Phase3Lesson} />
       <Route path={"/phase4"} component={Phase4Lesson} />

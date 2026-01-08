@@ -117,6 +117,7 @@ export default function HomeSimplified() {
               { icon: "🧮", label: "Calculators", path: "/tools-calculators", desc: "Component tools" },
               { icon: "❌", label: "Error Codes", path: "/error-codes", desc: "Arduino errors explained" },
               { icon: "🎤", label: "DIY Microphones", path: "/phone-mic-salvage", desc: "Build recording mics" },
+              { icon: "🎵", label: "Recording Templates", path: "/recording-templates", desc: "DAW presets & settings" },
             ].map(tool => (
               <Link key={tool.path} href={tool.path}>
                 <button className="bg-white rounded-xl p-6 border-2 border-gray-200 hover:border-blue-400 hover:shadow-md transition-all text-left border-0 cursor-pointer w-full">
