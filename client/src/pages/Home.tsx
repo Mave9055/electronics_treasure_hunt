@@ -101,6 +101,11 @@ export default function Home() {
                     Safety & Projects
                   </button>
                 </Link>
+                <Link href="/gamification">
+                  <button className="text-sm px-4 py-2 bg-indigo-100 text-indigo-700 rounded-lg hover:bg-indigo-200 transition-all border-0 cursor-pointer">
+                    Gamification
+                  </button>
+                </Link>
               </div>
             </div>
 

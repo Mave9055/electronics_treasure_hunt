@@ -20,6 +20,7 @@ import CompatibilityCheckerPage from "./pages/CompatibilityCheckerPage";
 import ToolsCalculators from "./pages/ToolsCalculators";
 import ErrorCodeReference from "./pages/ErrorCodeReference";
 import SafetyAndProjects from "./pages/SafetyAndProjects";
+import GamificationPage from "./pages/GamificationPage";
 
 function Router() {
   return (
@@ -40,6 +41,7 @@ function Router() {
       <Route path={"/tools-calculators"} component={ToolsCalculators} />
       <Route path={"/error-codes"} component={ErrorCodeReference} />
       <Route path={"/safety-projects"} component={SafetyAndProjects} />
+      <Route path={"/gamification"} component={GamificationPage} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />
