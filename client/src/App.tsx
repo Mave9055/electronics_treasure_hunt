@@ -13,6 +13,10 @@ import GettingStarted from "./pages/GettingStarted";
 import InteractiveMasterclass from "./pages/InteractiveMasterclass";
 import Phase1Lesson from "./pages/Phase1Lesson";
 import Phase1Enhanced from "./pages/Phase1Enhanced";
+import PhoneMicrophoneSalvage from "./pages/PhoneMicrophoneSalvage";
+import MicrophonePreamp from "./pages/MicrophonePreamp";
+import GuitarMicSetup from "./pages/GuitarMicSetup";
+import VocalMicSetup from "./pages/VocalMicSetup";
 import Phase2Lesson from "./pages/Phase2Lesson";
 import Phase3Lesson from "./pages/Phase3Lesson";
 import Phase4Lesson from "./pages/Phase4Lesson";
@@ -36,6 +40,10 @@ function Router() {
       <Route path={"/interactive-masterclass"} component={InteractiveMasterclass} />
       <Route path={"/phase1"} component={Phase1Enhanced} />
       <Route path={"/phase1-old"} component={Phase1Lesson} />
+      <Route path={"/phone-mic-salvage"} component={PhoneMicrophoneSalvage} />
+      <Route path={"/mic-preamp"} component={MicrophonePreamp} />
+      <Route path={"/guitar-mic-setup"} component={GuitarMicSetup} />
+      <Route path={"/vocal-mic-setup"} component={VocalMicSetup} />
       <Route path={"/phase2"} component={Phase2Lesson} />
       <Route path={"/phase3"} component={Phase3Lesson} />
       <Route path={"/phase4"} component={Phase4Lesson} />
