@@ -30,6 +30,7 @@ import ErrorCodeReference from "./pages/ErrorCodeReference";
 import SafetyAndProjects from "./pages/SafetyAndProjects";
 import GamificationPage from "./pages/GamificationPage";
 import UserProfile from "./pages/UserProfile";
+import QuickStart from "./pages/QuickStart";
 
 function Router() {
   return (
@@ -58,6 +59,7 @@ function Router() {
       <Route path={"/safety-projects"} component={SafetyAndProjects} />
       <Route path={"/gamification"} component={GamificationPage} />
       <Route path={"/profile"} component={UserProfile} />
+      <Route path={"/quick-start"} component={QuickStart} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />

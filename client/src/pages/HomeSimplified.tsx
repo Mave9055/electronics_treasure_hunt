@@ -18,15 +18,15 @@ export default function HomeSimplified() {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 mb-8">
-              <Link href="/getting-started">
-                <button className="px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-lg transition-all flex items-center justify-center gap-2 border-0 cursor-pointer">
-                  🚀 Get Started Now
+              <Link href="/quick-start">
+                <button className="px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-bold rounded-lg transition-all flex items-center justify-center gap-2 border-0 cursor-pointer shadow-lg">
+                  ⚡ Start 10-Minute Challenge
                   <ArrowRight className="w-5 h-5" />
                 </button>
               </Link>
-              <Link href="/interactive-masterclass">
+              <Link href="/getting-started">
                 <button className="px-8 py-4 border-2 border-blue-600 text-blue-600 hover:bg-blue-50 font-bold rounded-lg transition-all flex items-center justify-center gap-2 border-0 cursor-pointer bg-transparent">
-                  🛠️ Try Interactive Tools
+                  📚 Full Learning Path
                 </button>
               </Link>
             </div>
@@ -58,21 +58,48 @@ export default function HomeSimplified() {
         </div>
       </section>
 
-      {/* Main Learning Paths */}
+      {/* Why Choose Us */}
+      <section className="bg-gradient-to-r from-blue-50 to-purple-50 py-16 border-t border-gray-200">
+        <div className="container">
+          <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">Why Learn With Us?</h2>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+            <div className="bg-white rounded-2xl p-6 border-2 border-blue-200 hover:shadow-lg transition-all">
+              <div className="text-5xl mb-4">🎯</div>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Practical Skills</h3>
+              <p className="text-gray-700">Learn by doing real projects with actual components. No boring theory.</p>
+            </div>
+
+            <div className="bg-white rounded-2xl p-6 border-2 border-purple-200 hover:shadow-lg transition-all">
+              <div className="text-5xl mb-4">🏆</div>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Gamified Learning</h3>
+              <p className="text-gray-700">Earn badges, track progress, and celebrate wins. Learning should be fun.</p>
+            </div>
+
+            <div className="bg-white rounded-2xl p-6 border-2 border-green-200 hover:shadow-lg transition-all">
+              <div className="text-5xl mb-4">💰</div>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Completely Free</h3>
+              <p className="text-gray-700">No hidden fees, no paywall. Learn electronics without breaking the bank.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Main Learning Paths - Hidden by Default */}
       <section className="bg-white py-16 border-t border-gray-200">
         <div className="container">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">What You'll Learn</h2>
-          <p className="text-xl text-gray-600 mb-12">Choose your path and start learning today</p>
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">Explore More Paths</h2>
+          <p className="text-gray-600 mb-12">After completing the 10-minute challenge, choose your learning path</p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {/* Path 1 */}
             <Link href="/fundamentals">
               <button className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-8 border-2 border-blue-300 hover:shadow-lg transition-all text-left border-0 cursor-pointer w-full">
-                <div className="text-5xl mb-4">📚</div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-3">Fundamentals</h3>
-                <p className="text-gray-700 mb-4">Learn the core concepts: voltage, current, resistance, and how circuits work.</p>
-                <div className="flex items-center gap-2 text-blue-600 font-semibold">
-                  Start Learning <ArrowRight className="w-4 h-4" />
+                <div className="text-4xl mb-4">📚</div>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">Fundamentals</h3>
+                <p className="text-sm text-gray-700 mb-4">Voltage, current, resistance, and circuits</p>
+                <div className="flex items-center gap-2 text-blue-600 font-semibold text-sm">
+                  Learn <ArrowRight className="w-4 h-4" />
                 </div>
               </button>
             </Link>
@@ -80,11 +107,11 @@ export default function HomeSimplified() {
             {/* Path 2 */}
             <Link href="/interactive-masterclass">
               <button className="bg-gradient-to-br from-purple-50 to-purple-100 rounded-2xl p-8 border-2 border-purple-300 hover:shadow-lg transition-all text-left border-0 cursor-pointer w-full">
-                <div className="text-5xl mb-4">🛠️</div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-3">Interactive Tools</h3>
-                <p className="text-gray-700 mb-4">Use simulators, calculators, and breadboard designer to practice hands-on.</p>
-                <div className="flex items-center gap-2 text-purple-600 font-semibold">
-                  Explore Tools <ArrowRight className="w-4 h-4" />
+                <div className="text-4xl mb-4">🛠️</div>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">Interactive Tools</h3>
+                <p className="text-sm text-gray-700 mb-4">Simulators and calculators</p>
+                <div className="flex items-center gap-2 text-purple-600 font-semibold text-sm">
+                  Explore <ArrowRight className="w-4 h-4" />
                 </div>
               </button>
             </Link>
@@ -92,11 +119,11 @@ export default function HomeSimplified() {
             {/* Path 3 */}
             <Link href="/gamification">
               <button className="bg-gradient-to-br from-orange-50 to-orange-100 rounded-2xl p-8 border-2 border-orange-300 hover:shadow-lg transition-all text-left border-0 cursor-pointer w-full">
-                <div className="text-5xl mb-4">🏆</div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-3">Quizzes & Badges</h3>
-                <p className="text-gray-700 mb-4">Test your knowledge, earn badges, and track your progress with daily challenges.</p>
-                <div className="flex items-center gap-2 text-orange-600 font-semibold">
-                  Start Quizzes <ArrowRight className="w-4 h-4" />
+                <div className="text-4xl mb-4">🏆</div>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">Quizzes & Badges</h3>
+                <p className="text-sm text-gray-700 mb-4">Test knowledge and earn achievements</p>
+                <div className="flex items-center gap-2 text-orange-600 font-semibold text-sm">
+                  Start <ArrowRight className="w-4 h-4" />
                 </div>
               </button>
             </Link>
