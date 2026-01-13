@@ -1,0 +1,236 @@
+/* Breadboard Aesthetic Styling */
+
+/* Breadboard Grid Pattern Background */
+.breadboard-container {
+  background-image:
+    linear-gradient(0deg, transparent 24%, rgba(255, 255, 255, 0.05) 25%, rgba(255, 255, 255, 0.05) 26%, transparent 27%, transparent 74%, rgba(255, 255, 255, 0.05) 75%, rgba(255, 255, 255, 0.05) 76%, transparent 77%, transparent),
+    linear-gradient(90deg, transparent 24%, rgba(255, 255, 255, 0.05) 25%, rgba(255, 255, 255, 0.05) 26%, transparent 27%, transparent 74%, rgba(255, 255, 255, 0.05) 75%, rgba(255, 255, 255, 0.05) 76%, transparent 77%, transparent);
+  background-size: 50px 50px;
+  background-color: #1a1a2e;
+}
+
+/* Lab Bench Styling */
+.lab-bench {
+  background: linear-gradient(135deg, #0f3460 0%, #16213e 50%, #0f3460 100%);
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 
+    0 20px 60px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.lab-bench::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    radial-gradient(circle at 20% 50%, rgba(255, 255, 255, 0.03) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(255, 255, 255, 0.02) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+/* Breadboard Holes Pattern */
+.breadboard-holes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));
+  gap: 8px;
+  padding: 16px;
+  background: #0a0a0a;
+  border-radius: 8px;
+  border: 2px solid #333;
+}
+
+.breadboard-hole {
+  width: 30px;
+  height: 30px;
+  background: radial-gradient(circle at 30% 30%, #444, #111);
+  border-radius: 50%;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.8), inset 0 -1px 2px rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.breadboard-hole:hover {
+  background: radial-gradient(circle at 30% 30%, #666, #222);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.8), inset 0 -1px 2px rgba(255, 255, 255, 0.2), 0 0 8px rgba(100, 200, 255, 0.3);
+}
+
+.breadboard-hole.active {
+  background: radial-gradient(circle at 30% 30%, #ff6b6b, #cc0000);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.8), 0 0 12px rgba(255, 107, 107, 0.6);
+}
+
+/* Oscilloscope Screen Style */
+.oscilloscope-screen {
+  background: linear-gradient(135deg, #001a00 0%, #003300 100%);
+  border: 3px solid #333;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 
+    inset 0 0 20px rgba(0, 0, 0, 0.5),
+    0 0 20px rgba(0, 255, 0, 0.2);
+  font-family: 'Courier New', monospace;
+  color: #00ff00;
+  text-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+}
+
+/* Schematic Wire Styling */
+.schematic-wire {
+  stroke: #00ff00;
+  stroke-width: 2;
+  fill: none;
+  filter: drop-shadow(0 0 3px rgba(0, 255, 0, 0.5));
+}
+
+.schematic-wire.active {
+  stroke: #ff6b6b;
+  filter: drop-shadow(0 0 8px rgba(255, 107, 107, 0.8));
+  animation: pulse 1s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    stroke-width: 2;
+    filter: drop-shadow(0 0 3px rgba(255, 107, 107, 0.5));
+  }
+  50% {
+    stroke-width: 3;
+    filter: drop-shadow(0 0 8px rgba(255, 107, 107, 0.8));
+  }
+}
+
+/* Component Styling */
+.component {
+  transition: all 0.3s ease;
+}
+
+.component.highlighted {
+  filter: drop-shadow(0 0 8px rgba(100, 200, 255, 0.6)) brightness(1.2);
+}
+
+.led {
+  fill: #ff0000;
+  filter: drop-shadow(0 0 5px rgba(255, 0, 0, 0.3));
+}
+
+.led.on {
+  fill: #ff6b6b;
+  filter: drop-shadow(0 0 12px rgba(255, 107, 107, 0.8));
+  animation: glow 0.5s ease-in-out infinite;
+}
+
+@keyframes glow {
+  0%, 100% {
+    filter: drop-shadow(0 0 8px rgba(255, 107, 107, 0.6));
+  }
+  50% {
+    filter: drop-shadow(0 0 16px rgba(255, 107, 107, 0.9));
+  }
+}
+
+.resistor {
+  fill: #d4a574;
+  stroke: #8b6914;
+  stroke-width: 1;
+}
+
+.capacitor {
+  fill: #87ceeb;
+  stroke: #4682b4;
+  stroke-width: 1;
+}
+
+.ic-chip {
+  fill: #1a1a1a;
+  stroke: #666;
+  stroke-width: 2;
+}
+
+/* Lab Equipment Styling */
+.multimeter-display {
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  border: 2px solid #444;
+  border-radius: 4px;
+  padding: 12px;
+  font-family: 'Courier New', monospace;
+  color: #ff6b6b;
+  text-shadow: 0 0 5px rgba(255, 107, 107, 0.5);
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  min-width: 120px;
+}
+
+.power-supply {
+  background: linear-gradient(135deg, #2d2d2d 0%, #1a1a1a 100%);
+  border: 2px solid #666;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.power-supply-dial {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, #444, #111);
+  border: 2px solid #666;
+  position: relative;
+  cursor: pointer;
+}
+
+.power-supply-dial::after {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  width: 2px;
+  height: 20px;
+  background: #ff6b6b;
+  transform: translateX(-50%);
+  border-radius: 1px;
+}
+
+/* Soldering Iron Cursor */
+.soldering-cursor {
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><circle cx="16" cy="16" r="8" fill="%23ff6b6b" opacity="0.6"/><path d="M16 8 L20 16 L16 24 L12 16 Z" fill="%23ff6b6b"/></svg>') 16 16, auto;
+}
+
+/* Grid Background for Design Area */
+.design-grid {
+  background-image: 
+    linear-gradient(0deg, transparent 24%, rgba(255, 255, 255, 0.05) 25%, rgba(255, 255, 255, 0.05) 26%, transparent 27%, transparent 74%, rgba(255, 255, 255, 0.05) 75%, rgba(255, 255, 255, 0.05) 76%, transparent 77%, transparent),
+    linear-gradient(90deg, transparent 24%, rgba(255, 255, 255, 0.05) 25%, rgba(255, 255, 255, 0.05) 26%, transparent 27%, transparent 74%, rgba(255, 255, 255, 0.05) 75%, rgba(255, 255, 255, 0.05) 76%, transparent 77%, transparent);
+  background-size: 40px 40px;
+  background-color: #0a0a0a;
+  border: 1px solid #333;
+  border-radius: 4px;
+}
+
+/* Responsive Breadboard */
+@media (max-width: 768px) {
+  .breadboard-holes {
+    grid-template-columns: repeat(auto-fit, minmax(25px, 1fr));
+    gap: 6px;
+    padding: 12px;
+  }
+
+  .breadboard-hole {
+    width: 25px;
+    height: 25px;
+  }
+
+  .oscilloscope-screen {
+    font-size: 12px;
+  }
+
+  .multimeter-display {
+    font-size: 18px;
+    min-width: 100px;
+  }
+}
