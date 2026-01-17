@@ -6,7 +6,11 @@ import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import "./styles/breadboard.css";
 import ImprovedNavigation from "./components/ImprovedNavigation";
-import Home from "./pages/HomeSimplified";
+import CyberpunkHome from "./pages/CyberpunkHome";
+import CyberpunkDashboard from "./pages/CyberpunkDashboard";
+import CyberpunkLearn from "./pages/CyberpunkLearn";
+import CyberpunkTools from "./pages/CyberpunkTools";
+import CyberpunkCommunity from "./pages/CyberpunkCommunity";
 import Fundamentals from "./pages/Fundamentals";
 import Resources from "./pages/Resources";
 import Community from "./pages/Community";
@@ -31,11 +35,12 @@ import SafetyAndProjects from "./pages/SafetyAndProjects";
 import GamificationPage from "./pages/GamificationPage";
 import UserProfile from "./pages/UserProfile";
 import QuickStart from "./pages/QuickStart";
+import AnalyticsDashboard from "./pages/AnalyticsDashboard";
 
 function Router() {
   return (
     <Switch>
-      <Route path={"/"} component={Home} />
+      <Route path={"/"} component={CyberpunkHome} />
       <Route path={"/fundamentals"} component={Fundamentals} />
       <Route path={"/resources"} component={Resources} />
       <Route path={"/community"} component={Community} />
@@ -60,6 +65,11 @@ function Router() {
       <Route path={"/gamification"} component={GamificationPage} />
       <Route path={"/profile"} component={UserProfile} />
       <Route path={"/quick-start"} component={QuickStart} />
+      <Route path={"/analytics"} component={AnalyticsDashboard} />
+      <Route path={"/dashboard"} component={CyberpunkDashboard} />
+      <Route path={"/learn"} component={CyberpunkLearn} />
+      <Route path={"/tools"} component={CyberpunkTools} />
+      <Route path={"/community"} component={CyberpunkCommunity} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />
